@@ -3,39 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Puttanimation by caleuanhopkins</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <title>Putt Animation by caleuanhopkins</title>
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Puttanimation</h1>
-        <p>small svg animation of a putt</p>
+    </head>
+	<body style="background:#333">
+		<div style="border-radius: 500px; width:200px; height:200px; overflow:hidden; margin: 0 auto; border:7px solid #eee; margin-top:100px;">
+			<?xml version="1.0" encoding="utf-8"?>
+				<svg version="1.1" baseProfile="basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					 y="0px" viewBox="0 0 200 200" xml:space="preserve">
+				<style type="text/css">
+					.st0{fill:#4DA069;}
+					.st1{fill:#373D41;}
+					.st2{fill:#D6D7D8;}
+					.st3{fill:#E6E7E8;}
+					.ball{
+						fill:#FFFFFF;
+						animation-name:roll, drop;
+						animation-duration: 1.5s, 0.5s;
+						animation-timing-function: cubic-bezier(.42,.85,.51,1.02), ease-in;
+						animation-iteration-count: 1, 1;
+						animation-fill-mode: forwards, forwards;
+						animation-delay: 2s, 3.2s;
+					}
 
-        <p class="view"><a href="https://github.com/caleuanhopkins/puttanimation">View the Project on GitHub <small>caleuanhopkins/puttanimation</small></a></p>
+					@keyframes roll {
+					  0% {
+					    transform:translateX(0px)  translateY(0px);;
+					  }
+					  100% {
+					    transform: translateX(111px)  translateY(0px);;
+					  }
+					}
 
+					@keyframes drop {
+					  0% {
+					    transform:translateX(111px) translateY(0px);
 
-        <ul>
-          <li><a href="https://github.com/caleuanhopkins/puttanimation/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/caleuanhopkins/puttanimation/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/caleuanhopkins/puttanimation">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p>kjsdhf</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/caleuanhopkins">caleuanhopkins</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+					  }
+					  50%{
+					  	transform: translateX(125px) translateY(5px);
+					  }
+					  100% {
+					    transform: translateX(130px) translateY(20px);
+					  }
+					}
+				</style>
+				<g id="Layer_1">
+					<rect x="-6.9" y="-3.4" class="st0" width="210" height="205.8"/>
+				</g>
+				<g id="Layer_2">
+					<ellipse class="st1" cx="126.9" cy="116.8" rx="21.8" ry="4.5"/>
+					<g>
+						<line class="st2" x1="136.3" y1="119.8" x2="136.3" y2="0.7"/>
+						<path class="st3" d="M136.3,121.3c0,0-5.1,0.5-5-1.4V0.7c0-2.8,2.2-5,5-5s5,2.2,5,5v119.2C141.2,121.4,136.3,121.3,136.3,121.3z"
+							/>
+					</g>
+					<circle class="ball" cx="-6.9" cy="109.8" r="7"/>
+				</g>
+				<g id="Layer_3">
+					<path class="st0" d="M-6.9,116.8v85.6h210v-85.6l-54.4,0c0,2.5-9.8,4.5-21.8,4.5c-12.1,0-21.8-2-21.8-4.5L-6.9,116.8z"/>
+				</g>
+				<g id="Layer_4">
+				</g>
+			</svg>
+		</div>
+	</body>
 </html>
